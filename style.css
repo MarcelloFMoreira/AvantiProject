@@ -1,12 +1,10 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ESTILIZAÇÃO DO HEADER */ 
+/* ESTILIZAÇÃO DO HEADER */
 
 .anuncioDesconto {
     display: flex;
@@ -19,17 +17,17 @@
     align-items: center;
 }
 
-.anuncioDesconto .span1{
+.anuncioDesconto .span1 {
     background-color: #6220c1;
     border-radius: 4px;
 }
 
-.anuncioDesconto .span2{
+.anuncioDesconto .span2 {
     font-weight: 200;
 }
 
 
-.topoHeader{
+.topoHeader {
     padding-top: 1%;
     display: flex;
     align-items: center;
@@ -38,14 +36,14 @@
 }
 
 
-.inputInicial{
+.inputInicial {
     width: 594px;
     height: 40px;
     border: 1px solid #dddddd;
     border-radius: 10px;
-    background-image: url('img/iconLupa.png'); 
-    background-repeat: no-repeat; 
-    background-position: calc(100% - 4px) center; 
+    background-image: url('img/iconLupa.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 4px) center;
     background-size: 16px 16px;
     margin: 0 280px 0 70px;
 }
@@ -58,7 +56,7 @@
     font-size: small;
 }
 
-.sectionLinks ul{
+.sectionLinks ul {
     margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -69,7 +67,7 @@
     font-family: "Nunito Sans", sans-serif;
 }
 
-.sectionLinks ul li a{
+.sectionLinks ul li a {
     text-decoration: none;
     color: black;
     font-size: 14.7px;
@@ -78,7 +76,7 @@
 
 /*ESTILIZANDO TOPO SITE */
 
-.topoSite{
+.topoSite {
     display: flex;
     background-color: #e7e7ea;
     align-items: center;
@@ -87,12 +85,204 @@
 
 }
 
-.topoSite .titulo h1{
-    font-size: 100px;   
-    font-weight:600
+.topoSite .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.topoSite .titulo h1 {
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.topoSite .titulo h1 span {
+    font-weight: 300;
+
+}
+
+.topoSite .titulo p {
+    color: #005CFF;
+    font-size: 23px;
+    font-weight: 750;
+    letter-spacing: 7px;
+    margin-bottom: 12px;
+}
+
+.topoSite .titulo h2 {
+    color: #005CFF;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* ESTILIZAÇÃO CARROSEL*/
+
+.carrossel {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    height: 500px;
+}
+
+.todosProdutos {
+    display: flex;
+    gap: 30px;
+}
+
+.containerProduto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    height: 430px;
+    width: 238px;
+}
+
+.containerProduto img {
+    width: 222px;
+    margin-bottom: 20px;
+}
+
+.containerProduto h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+
+.containerProduto p {
+    align-self: flex-start;
+    margin-left: 12px;
+}
+
+.containerProduto .SemDesconto {
+    margin-bottom: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 50;
+    font-size: small;
+    text-decoration: line-through;
+
+}
+
+.containerProduto .ComDesconto {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.containerProduto .Parcelado {
+    margin: 2px 0 px 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+
+}
+
+.containerProduto .Parcelado span {
+    font-weight: 800;
+}
+
+.containerProduto button {
+    width: 222px;
+    height: 40px;
+    background-color: #005CFF;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.containerProduto button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.Lancamentos {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-left: 16%;
+}
+
+/*ESTILIZAÇÃO CARROSEL*/
+
+.carrossel-container {
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.todosProdutos {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.containerProduto {
+    flex: 0 0 238px;
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;    
+    z-index: 2;
+    padding: 10;
+}
+
+.btn-prev {
+    left: 0px;
+}
+
+.btn-next {
+    right: 0px;
+}
+
+/* ESTILIZAÇÃO PAGINA DA XICARA 1*/
+
+.cup1Page{
+    display: flex;
+    padding: 0 20%;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.xicaraImagem{
+    background-color: #c2c2c2;
+    width: 593px;
+    height: 589PX;
 
 
 }
-.topoSite .titulo h1 span{
-    font-weight: 300;
+
+.cup1Page .txt{
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+}
+
+.cup1Page .txt h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cup1Page .txt p{
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
 }
