@@ -121,8 +121,8 @@
 
 .carrossel {
     margin-top: 90px;
-    margin-bottom: 90px;
-    height: 500px;
+    margin-bottom:30px;
+    height: 478px;
 }
 
 .todosProdutos {
@@ -212,7 +212,7 @@
 .carrossel-container {
     position: relative;
     max-width: 1300px;
-    margin: auto;
+    margin: 10px 15%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -236,7 +236,7 @@
     background-color: transparent;
     border: none;
     font-size: 24px;
-    cursor: pointer;    
+    cursor: pointer;
     z-index: 2;
     padding: 10;
 }
@@ -251,15 +251,17 @@
 
 /* ESTILIZAÇÃO PAGINA DA XICARA 1*/
 
-.cup1Page{
+.cup1Page {
     display: flex;
     padding: 0 20%;
     justify-content: center;
     align-items: center;
     height: 600px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
-.xicaraImagem{
+.xicaraImagem {
     background-color: #c2c2c2;
     width: 593px;
     height: 589PX;
@@ -267,22 +269,85 @@
 
 }
 
-.cup1Page .txt{
-    margin: 20px; 
+.cup1Page .txt {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-width: 200px;
 }
 
-.cup1Page .txt h3{
+.cup1Page .txt h3 {
     font-family: "Nunito", sans-serif;
     font-size: 30px;
     font-weight: 700;
 }
 
-.cup1Page .txt p{
+.cup1Page .txt p {
     font-family: "Nunito", sans-serif;
     font-size: 15px;
     font-weight: normal;
+}
+
+/* ESTILIZAÇÃO PAGINA DA XICARA 2*/
+
+.cup2page{
+    background-color: #DEDEDE;
+    height: 819px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.textoeicon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 46%;
+}
+
+.textoeicon .title{
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #4F4F4F;
+    text-align: center;
+}
+
+.txt2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #4F4F4F;
+}
+
+.txt2 .iconL{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.txt2 p{
+    margin: 20px 15px;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imgxicara2 img{
+    max-height: 728.14px;
+    max-width: 652px;
+}
+
+.imgxicara2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
