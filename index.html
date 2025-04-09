@@ -14,7 +14,6 @@
         rel="stylesheet">
     <!--Incluindo favicon-->
     <link rel="shortcut icon" href="img\logo.jpeg">
-
 </head>
 
 <body>
@@ -37,8 +36,7 @@
             </div><!--topoHeader-->
             <div class="sectionLinks">
                 <ul>
-                    <li><img src="img/iconHamburg.png"></li>
-                    <li><a href="#">Todas as Categorias</a></li>
+                    <li id="iBurguer" onclick="clickMenu()"><img src="img/iconHamburg.png"><a href="#">Todas as Categorias</a></li>
                     <li><a href="#">Departamento</a></li>
                     <li><a href="#">Departamento</a></li>
                     <li><a href="#">Departamento</a></li>
@@ -50,6 +48,54 @@
                 </ul>
             </div><!--sectionLinks-->
         </div> <!--headerPadrão-->
+
+        <section class="menuTodasCat" id="TodasCatItens">
+            <div class="listDepartamentos">
+                <ul>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                </ul>
+            </div>
+            <div class="ContainerCategoria">
+                <div class="listCategoria">
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                </div>
+                <div class="listCategoria">
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                </div>
+                <div class="listCategoria">
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                    <a href="#"><p>Categoria</p></a>
+                </div>
+            </div>
+            <div class="imgMenu"><img src="img\imgMenu.png" alt=""></div>
+        </section><!--menuTodasCat-->
     </header>
     <main>
         <section class="topoSite">
@@ -415,7 +461,14 @@
         </div><!--containerFooterTop-->
 
         <div class="final">
-            <div class="txtFinal"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p></div>
+            <div class="txtFinal">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
             <div class="imgFinal">
                 <img src="img\letsEncrypt.png">
                 <img src="img\VTEX2.png">
@@ -424,7 +477,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="script.js"></script>
-
 </html>

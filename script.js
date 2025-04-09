@@ -55,3 +55,14 @@ document.querySelectorAll('.carrossel-container').forEach((carrosselContainer) =
     btnNext.addEventListener('click', () => moveCarrossel('next'));
     btnPrev.addEventListener('click', () => moveCarrossel('prev'));
 });
+
+
+function clickMenu() {
+    const TodasCatItens = document.getElementById('TodasCatItens');
+
+    if (TodasCatItens.style.display === 'none' || TodasCatItens.style.display === '') {
+        TodasCatItens.style.display = 'flex';
+    } else {
+        TodasCatItens.style.display = 'none';
+    }
+}
