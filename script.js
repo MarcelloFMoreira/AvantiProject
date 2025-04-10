@@ -57,12 +57,36 @@ document.querySelectorAll('.carrossel-container').forEach((carrosselContainer) =
 });
 
 
-function clickMenu() {
+function clickMenu1() {
     const TodasCatItens = document.getElementById('TodasCatItens');
+    const DepartamentoMenu = document.getElementById('DepartamentoMenu');
+
+
+    if (DepartamentoMenu.style.display === 'flex') {
+        DepartamentoMenu.style.display = 'none';
+    }
+
 
     if (TodasCatItens.style.display === 'none' || TodasCatItens.style.display === '') {
         TodasCatItens.style.display = 'flex';
     } else {
         TodasCatItens.style.display = 'none';
+    }
+}
+
+function clickMenu2() {
+    const DepartamentoMenu = document.getElementById('DepartamentoMenu');
+    const TodasCatItens = document.getElementById('TodasCatItens');
+
+
+    if (TodasCatItens.style.display === 'flex') {
+        TodasCatItens.style.display = 'none';
+    }
+
+
+    if (DepartamentoMenu.style.display === 'none' || DepartamentoMenu.style.display === '') {
+        DepartamentoMenu.style.display = 'flex';
+    } else {
+        DepartamentoMenu.style.display = 'none';
     }
 }
