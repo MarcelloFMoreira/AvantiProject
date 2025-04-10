@@ -57,36 +57,36 @@ document.querySelectorAll('.carrossel-container').forEach((carrosselContainer) =
 });
 
 
+let lastClickedDepartamento = null;
+
 function clickMenu1() {
     const TodasCatItens = document.getElementById('TodasCatItens');
     const DepartamentoMenu = document.getElementById('DepartamentoMenu');
 
-
-    if (DepartamentoMenu.style.display === 'flex') {
-        DepartamentoMenu.style.display = 'none';
-    }
-
+    DepartamentoMenu.style.display = 'none';
 
     if (TodasCatItens.style.display === 'none' || TodasCatItens.style.display === '') {
         TodasCatItens.style.display = 'flex';
     } else {
         TodasCatItens.style.display = 'none';
     }
+
+    lastClickedDepartamento = null; 
 }
 
-function clickMenu2() {
+function clickMenu2(element) {
     const DepartamentoMenu = document.getElementById('DepartamentoMenu');
     const TodasCatItens = document.getElementById('TodasCatItens');
 
+    TodasCatItens.style.display = 'none';
 
-    if (TodasCatItens.style.display === 'flex') {
-        TodasCatItens.style.display = 'none';
-    }
+    const departamentoID = element.getAttribute('data-departamento');
 
-
-    if (DepartamentoMenu.style.display === 'none' || DepartamentoMenu.style.display === '') {
-        DepartamentoMenu.style.display = 'flex';
-    } else {
+    if (lastClickedDepartamento === departamentoID && DepartamentoMenu.style.display === 'flex') {
         DepartamentoMenu.style.display = 'none';
+        lastClickedDepartamento = null;
+    } else {
+        DepartamentoMenu.style.display = 'flex';
+        lastClickedDepartamento = departamentoID;
     }
 }
