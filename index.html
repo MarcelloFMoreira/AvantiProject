@@ -20,35 +20,43 @@
     <header>
         <div class="anuncioDesconto">
             <div class="textDesconto">
-                <p>Ganhe <span class="span1">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <i
-                        class="span2">DESCONTO10</i> </p>
+                <p>
+                    Ganhe <span class="span1">R$10,00</span> de desconto no seu primeiro pedido.
+                    <span class="quebra-linha">Utilize o cupom <i class="span2">DESCONTO10</i></span>
+                </p>
             </div>
-        </div><!--anuncioDesconto-->
+        </div>
         <div class="headerPadrão">
             <div class="topoHeader">
-                <a href="#"><img src="img\LogoAvanti.png" alt="LogoAvanti"></a><!--Fecha tag logo-->
-                <input class="inputInicial" type="text" placeholder="   Digite aqui o que você procura">
-                <a href="#" class="userIcon"><img src="img\IconUser.png" alt="User"></a>
-                <a href="#" class="HelloLink">
-                    <p>Olá, <br>Nome cliente!</p>
-                </a>
-                <a href="#"><img src="img\IconCarrinho.png" alt="Seu carrinho"></a>
-            </div><!--topoHeader-->
+                <div class="hamburguerContainer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg></div>
+                <div class="Logoimg"><a href="#"><img src="img\LogoAvanti.png" alt="LogoAvanti"></a></div><!--Logoimg-->
+                <div class="inputContainer"><input class="inputInicial" type="text" placeholder="Digite aqui o que você procura">
+                <a href="#" class="userIcon"><img src="img\IconUser.png" alt="User"></a></div><!--inputContainer-->
+                <a href="#" class="HelloLink"><p>Olá, <br>Nome cliente!</p></a>
+                <div class="ImgCarrinhoContainer"><a href="#"><img src="img\IconCarrinho.png" alt="Seu carrinho"></a></div><!--ImgCarrinhoContainer-->
+            </div>
             <div class="sectionLinks">
                 <ul>
                     <li id="iBurguer" onclick="clickMenu1()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
-                          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/> 
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                         </svg>
                         <a href="#">Todas as Categorias</a>
-                      </li>
-                    <li onclick="clickMenu2(this)" data-departamento="1"><a href="#" class="dep-link">Departamento</a></li>
-                    <li onclick="clickMenu2(this)" data-departamento="2"><a href="#" class="dep-link">Departamento</a></li>
-                    <li onclick="clickMenu2(this)" data-departamento="3"><a href="#" class="dep-link">Departamento</a></li>
-                    <li onclick="clickMenu2(this)" data-departamento="4"><a href="#" class="dep-link">Departamento</a></li>
-                    <li onclick="clickMenu2(this)" data-departamento="5"><a href="#" class="dep-link">Departamento</a></li>
-                    <li onclick="clickMenu2(this)" data-departamento="6"><a href="#" class="dep-link">Departamento</a></li>       
-                    <li onclick="clickMenu2(this)" data-departamento="7"><a href="#" class="dep-link">Departamento</a></li>                
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="1"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="2"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="3"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="4"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="5"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="6"><a href="#" class="dep-link">Departamento</a>
+                    </li>
+                    <li onclick="clickMenu2(this)" data-departamento="7"><a href="#" class="dep-link">Departamento</a>
+                    </li>
                 </ul>
             </div><!--sectionLinks-->
         </div> <!--headerPadrão-->
@@ -56,46 +64,110 @@
         <section class="menuTodasCat" id="TodasCatItens">
             <div class="listDepartamentos">
                 <ul>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
-                    <li><a href="#"><p>Departamento</p> <img src="img\arrow.svg"></a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
+                    <li><a href="#">
+                            <p>Departamento</p> <img src="img\arrow.svg">
+                        </a></li>
                 </ul>
             </div>
             <div class="ContainerCategoria">
                 <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
                 </div>
                 <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
                 </div>
                 <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
+                    <a href="#">
+                        <p>Categoria</p>
+                    </a>
                 </div>
             </div>
             <div class="imgMenu"><img src="img\imgMenu.png" alt=""></div>
@@ -103,43 +175,91 @@
 
         <section id="DepartamentoMenu">
             <div class="totalDep">
-            <div class="flexD">
-            <h5>Departamento</h5>
-            <div class="ContainerCategoria">
-                <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
+                <div class="flexD">
+                    <h5>Departamento</h5>
+                    <div class="ContainerCategoria">
+                        <div class="listCategoria">
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                        </div>
+                        <div class="listCategoria">
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                        </div>
+                        <div class="listCategoria">
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                            <a href="#">
+                                <p>Categoria</p>
+                            </a>
+                        </div>
+                    </div><!--flexD-->
                 </div>
-                <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                </div>
-                <div class="listCategoria">
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                    <a href="#"><p>Categoria</p></a>
-                </div>
-            </div><!--flexD-->
-            </div>
-            <div class="imgMenu2"><img src="img\imgMenu.png" alt=""></div>
-        </div><!--totalDep-->
+                <div class="imgMenu2"><img src="img\imgMenu.png" alt=""></div>
+            </div><!--totalDep-->
         </section><!--DepartamentoMenu-->
 
     </header>
@@ -526,4 +646,5 @@
 
 </body>
 <script src="script.js"></script>
+
 </html>
