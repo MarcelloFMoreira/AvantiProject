@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 /* ESTILIZAÇÃO DO HEADER */
 
@@ -261,6 +264,16 @@ header {
     margin-top: 143px;
 }
 
+.Bg-cadeira{
+    height: 516px;
+}
+
+.Bg-cadeira img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
 .topoSite .titulo {
     display: flex;
     flex-direction: column;
@@ -450,7 +463,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 200px;
+    min-width: 280px;
+
 }
 
 .cup1Page .txt h3 {
@@ -737,7 +751,7 @@ button:hover {
 }
 
 
-
+/*RESPONSIVIDADE DO HEADER*/
 @media (max-width: 1300px) {
     .quebra-linha {
         display: block;
@@ -790,7 +804,7 @@ button:hover {
     }
 
     .topoHeader {
-        margin-top: 15px;
+        padding-top: 15px;
         margin-bottom: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
@@ -800,5 +814,74 @@ button:hover {
             "HAMBURGUER LOGO CARRINHO"
             "INPUT INPUT INPUT";
         align-items: center;
+    }
+}
+
+
+/*RESPONSIVIDADE DO CUP PAGE 1*/
+@media (max-width: 1300px) {
+    .cup1Page{
+        display: flex;
+        flex-direction: column;
+        min-height: 732px;
+        margin: 70px 0 0 0 !important;  
+        padding: 0 !important;
+    }
+    .cup1Page .xicaraImagem{
+        width: 100%;
+        max-width: 589px;
+        display: flex;
+        justify-content: center;
+    }
+    .cup1Page .xicaraImagem img{
+        width: 84%;
+        height: auto;
+    }
+}
+
+/*RESPONSIVIDADE DO CUP PAGE 2*/
+@media (max-width: 1300px) {
+    .cup2page{
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 717px;
+        width: 100%;
+        margin: 40px 0;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        justify-content: center;
+    }
+
+    .cup2page .imgxicara2 img{
+        max-height: 349px;
+    }
+
+    .txt2 .iconL{
+        max-width: 3rem;
+    }
+    .txt2{
+        margin-bottom: 14px;
+        margin-right: 0;
+        min-width: 320px;
+        max-width: 500px
+    }
+
+    .txt2 p{
+        font-size: 12px;
+        margin: 0 0 0px 14px;
+        min-width: 240px;
+        
+    }
+    .textoeicon .title{
+        font-size:20px;
+        margin: 24px 0px 32px 0px;
+
+    }
+    .textoeicon{
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
     }
 }
