@@ -69,7 +69,9 @@ header{
 
 .HelloLink:hover{
     color:  #005CFF;
+    transition: color 0.2s, fill 0.2s;
 }
+
 
 .sectionLinks ul {
     padding-top: 10px;
@@ -91,6 +93,7 @@ header{
 
 .sectionLinks ul li a:hover{
     color: #005CFF;
+    transition: color 0.2s, fill 0.2s;
 }
 
 
@@ -101,6 +104,19 @@ header{
 .headerPadrão{
     background-color: white;
 }
+
+
+
+.dep-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .dep-link.ativo {
+    color: #005CFF;
+  }
+
 /*ESTILIZAÇÃO DO HEADER INVISIVEL*/
 
 .menuTodasCat{
@@ -118,12 +134,22 @@ header{
     cursor: pointer;
     align-items: center;
     gap: 2px;
-}
-
-#iBurguer:hover{
+  }
+  
+  #iBurguer.ativo {
     color: #005CFF;
-}
+  }
+  
+  #iBurguer.ativo a {
+    color: inherit;
+  }
 
+  #iBurguer:hover svg,
+  #iBurguer:hover a {
+    color: #005CFF;
+    fill: #005CFF;
+    transition: color 0.2s, fill 0.2s;
+  }
 .ContainerCategoria{
     display: flex;
     gap: 125px;
@@ -164,6 +190,7 @@ header{
 .listDepartamentos a:hover{
     filter: none;
     color:#005CFF;
+    transition: color 0.2s, fill 0.2s;
 }
 
 
@@ -640,6 +667,14 @@ header{
 .CentralAjuda h4,
 .Atendimento h4 {
     margin-bottom: 23px;
+}
+
+.Institu h5:hover,
+.CentralAjuda h5:hover,
+.Atendimento h5:hover  {
+    color: #005CFF;
+    transition: color 0.2s;
+    cursor: pointer;
 }
 
 .Institu h5,
