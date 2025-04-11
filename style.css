@@ -626,6 +626,11 @@ header{
     font-size: 16px;
 }
 
+button:hover{
+    background-color: #1e6aedc5;
+    transition: background-color 0.8s;
+}
+
 .infosFooter{
     display: flex;
     gap: 110px;
