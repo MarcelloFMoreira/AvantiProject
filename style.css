@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -12,7 +14,7 @@ html, body {
 
 
 
-.hamburguerContainer{
+.hamburguerContainer {
     display: none;
 }
 
@@ -99,7 +101,7 @@ header {
 }
 
 
-.sectionLinks ul li a:hover {
+.sectionLinks ul li p:hover {
     color: #005CFF;
     transition: color 0.2s, fill 0.2s;
 }
@@ -119,6 +121,7 @@ header {
     color: black;
     text-decoration: none;
     transition: color 0.3s;
+    cursor: pointer;
 }
 
 .dep-link.ativo {
@@ -148,12 +151,12 @@ header {
     color: #005CFF;
 }
 
-#iBurguer.ativo a {
+#iBurguer.ativo p {
     color: inherit;
 }
 
 #iBurguer:hover svg,
-#iBurguer:hover a {
+#iBurguer:hover p {
     color: #005CFF;
     fill: #005CFF;
     transition: color 0.2s, fill 0.2s;
@@ -262,13 +265,14 @@ header {
     justify-content: center;
     font-family: "Nunito", sans-serif;
     margin-top: 143px;
+    padding-right: 40px;
 }
 
-.Bg-cadeira{
+.Bg-cadeira {
     height: 516px;
 }
 
-.Bg-cadeira img{
+.Bg-cadeira img {
     height: 100%;
     width: auto;
     object-fit: cover;
@@ -289,6 +293,7 @@ header {
 
 .topoSite .titulo h1 span {
     font-weight: 300;
+
 
 }
 
@@ -543,13 +548,45 @@ header {
 }
 
 .pagContact {
-    background-image: url("../img/BgAvanti.png");
-    background-size: cover;
-    /* cobre toda a área */
-    background-position: center;
-    /* centraliza a imagem */
-    background-repeat: no-repeat;
+    width: 100%;
     height: 660px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagContact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 102%;
+    background-image: url('img/BgAavanti.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.02);
+    transform-origin: center;
+}
+
+.BarraAzul {
+    z-index: 2;
+    width: 100%;
+    height: 132px;
+    background-color: #005CFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BarraAzul p {
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    margin: 0 80px;
+    text-align: center;
 }
 
 /*ESTILIZAÇÃO PAG CADASTRO USER*/
@@ -721,7 +758,7 @@ button:hover {
 
 .bandeirasParceiras {
     display: flex;
-    gap: 34px;
+    gap: 35px;
     align-items: center;
     justify-content: center;
     margin-top: 42px;
@@ -733,10 +770,21 @@ button:hover {
     align-items: center;
     justify-content: center;
     height: 211px;
+
 }
 
+#Mobile {
+    display: none;
+}
+
+#Desktop {
+
+    display: block;
+}
+
+
 .txtFinal {
-    width: 1074px;
+    width: 80%;
     font-family: "Nunito Sans", sans-serif;
     font-size: 12px;
     text-align: center;
@@ -766,49 +814,51 @@ button:hover {
     .topoHeader a.userIcon,
     .topoHeader a.HelloLink,
     .sectionLinks ul li,
-    .sectionLinks ul li a, 
-    .sectionLinks ul li svg{
+    .sectionLinks ul li p,
+    .sectionLinks ul li svg {
         display: none;
     }
-    .sectionLinks ul{
+
+    .sectionLinks ul {
         display: grid;
         padding: 0 !important;
     }
-    .inputInicial{
+
+    .inputInicial {
         margin: 0 !important;
     }
 
-    .Logoimg{
+    .Logoimg {
         grid-area: LOGO !important;
         display: flex;
         justify-content: center;
     }
 
-    .inputContainer{
+    .inputContainer {
         grid-area: INPUT !important;
         display: flex;
         justify-content: center;
         margin: 0 10%;
     }
-    
-    .ImgCarrinhoContainer{
+
+    .ImgCarrinhoContainer {
         grid-area: CARRINHO !important;
         display: flex;
-        justify-content: center;    
+        justify-content: center;
     }
 
-    .hamburguerContainer{
+    .hamburguerContainer {
         grid-area: HAMBURGUER !important;
         display: flex;
-        justify-content: center;   
+        justify-content: center;
     }
 
     .topoHeader {
         padding-top: 15px;
         margin-bottom: 15px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: auto auto; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
         row-gap: 20px;
         grid-template-areas:
             "HAMBURGUER LOGO CARRINHO"
@@ -817,23 +867,157 @@ button:hover {
     }
 }
 
+/*RESPONSIVIDADE DO TOPO DO SITE*/
+
+@media (max-width: 1300px) {
+
+    .topoSite {
+        margin-top: 200px;
+    }
+
+    .topoSite .titulo h1 span {
+        text-align: center;
+
+
+    }
+
+    .topoSite .titulo h2,
+    .topoSite .titulo h1 {
+        font-size: 70px;
+    }
+
+    .topoSite .titulo p {
+        text-align: center;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .Bg-cadeira {
+        transform: translateX(-10%);
+    }
+
+}
+
+@media (max-width: 1075px) {
+    .Bg-cadeira {
+        transform: translateX(-20%);
+        margin-right: -100px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .Bg-cadeira {
+        transform: translateX(-40%);
+        margin-right: -200px;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .Bg-cadeira {
+        transform: translateX(-40%);
+        margin-right: -250px;
+    }
+}
+
+@media (max-width: 820px) {
+    .Bg-cadeira {
+        transform: translateX(-50%);
+        margin-right: -400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .Bg-cadeira {
+        transform: translateX(-50%);
+        margin-right: -400px;
+    }
+
+    .topoSite .titulo h2,
+    .topoSite .titulo h1 {
+        font-size: 40px;
+    }
+
+    .topoSite .titulo p {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 623px) {
+    .Bg-cadeira {
+        transform: translateX(-60%);
+        margin-right: -440px;
+    }
+}
+
+@media (max-width: 560px) {
+    .Bg-cadeira {
+        transform: translateX(-65%);
+        margin-right: -470px;
+    }
+}
+
+@media (max-width: 432px) {
+    .Bg-cadeira {
+        transform: translateX(-60%);
+        margin-right: -270px;
+        height: 100%;
+    }
+
+
+    .topoSite .titulo h2,
+    .topoSite .titulo h1 {
+        font-size: 35px;
+        font-weight: 680;
+    }
+
+    .topoSite .titulo h1 span {
+        font-weight: 300;
+    }
+
+    .topoSite .titulo p {
+        text-align: center;
+        font-size: 9px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .titulo h1 span {
+        display: block;
+    }
+
+    .topoSite {
+        justify-content: space-between;
+        height: 306px;
+        padding: 0;
+    }
+
+}
+
 
 /*RESPONSIVIDADE DO CUP PAGE 1*/
 @media (max-width: 1300px) {
-    .cup1Page{
+    .cup1Page {
         display: flex;
         flex-direction: column;
         min-height: 732px;
-        margin: 70px 0 0 0 !important;  
+        margin: 70px 0 0 0 !important;
         padding: 0 !important;
     }
-    .cup1Page .xicaraImagem{
+
+    .cup1Page .xicaraImagem {
         width: 100%;
         max-width: 589px;
         display: flex;
         justify-content: center;
     }
-    .cup1Page .xicaraImagem img{
+
+    .cup1Page .xicaraImagem img {
         width: 84%;
         height: auto;
     }
@@ -841,7 +1025,7 @@ button:hover {
 
 /*RESPONSIVIDADE DO CUP PAGE 2*/
 @media (max-width: 1300px) {
-    .cup2page{
+    .cup2page {
         display: flex;
         flex-direction: column-reverse;
         min-height: 717px;
@@ -852,36 +1036,159 @@ button:hover {
         justify-content: center;
     }
 
-    .cup2page .imgxicara2 img{
+    .cup2page .imgxicara2 img {
         max-height: 349px;
     }
 
-    .txt2 .iconL{
+    .txt2 .iconL {
         max-width: 3rem;
     }
-    .txt2{
+
+    .txt2 {
         margin-bottom: 14px;
         margin-right: 0;
         min-width: 320px;
         max-width: 500px
     }
 
-    .txt2 p{
+    .txt2 p {
         font-size: 12px;
         margin: 0 0 0px 14px;
         min-width: 240px;
-        
+
     }
-    .textoeicon .title{
-        font-size:20px;
+
+    .textoeicon .title {
+        font-size: 20px;
         margin: 24px 0px 32px 0px;
 
     }
-    .textoeicon{
+
+    .textoeicon {
         height: auto;
         margin-right: 20px;
         margin-left: 20px;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/*RESPONSIVIDADE PagContact*/
+
+@media (max-width: 1300px) {
+    .pagContact {
+        max-height: 390px !important;
+    }
+
+    .pagContact .BarraAzul {
+        max-height: 75px;
+
+    }
+
+    .BarraAzul p {
+        font-size: 13px;
+    }
+}
+
+/*RESPONSIVIDADE input cadastro*/
+@media (max-width: 1300px) {
+    .inputs {
+        min-height: 284px;
+        margin-right: 18px;
+        margin-left: 18px;
+        width: 358px !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 41px 0px;
+    }
+
+    .inputs .WriteUser {
+        min-height: 48px;
+        min-width: 326px;
+    }
+
+    .inputs .checkboxGroup {
+        font-size: 12px;
+        margin: 0 40px;
+    }
+
+    .inputs button {
+        width: 326px;
+        height: 48px !important;
+        min-height: 48px;
+    }
+}
+
+
+/*RESPONSIVIDADE FOOTER*/
+@media (max-width: 1300px) {
+    .containerFooterTop .flex .infosFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .infosFooter .logo_Links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 42px;
+        height: 100%
+    }
+
+    .SocialLinks {
+        gap: 40px;
+    }
+
+    .Institu h5,
+    .CentralAjuda h5,
+    .Atendimento h5 {
+        display: none;
+    }
+
+    .bandeirasParceiras {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 42px 30px 0 30px !important;
+        padding-bottom: 42px;
+    }
+
+    .Institu h4,
+    .CentralAjuda h4,
+    .Atendimento h4 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 55px;
+        width: 100%;
+        border: solid 1px #DDDDDD;
+    }
+
+    .containerFooterTop {
+        width: 100%;
+        height: 100%;
+    }
+
+    .containerFooterTop .flex {
+        display: block;
+
+    }
+
+    .final {
+        height: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #Mobile {
+        display: block;
+    }
+
+    #Desktop {
+        display: none;
     }
 }
