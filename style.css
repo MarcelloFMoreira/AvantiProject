@@ -12,7 +12,28 @@ body {
 /* ESTILIZAÇÃO DO HEADER */
 
 
+.ImgCarrinhoContainer {
+    position: relative;
 
+  }
+
+  .bolinhaAzul {
+    position: absolute;
+    top: -5px;   
+    right: -5px; 
+    width: 17px;
+    height: 17px;
+    background-color: #005CFF;
+    border-radius: 50%;
+    z-index: 2;  
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .hamburguerContainer {
     display: none;
@@ -851,6 +872,8 @@ button:hover {
         grid-area: HAMBURGUER !important;
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
     .topoHeader {
@@ -865,7 +888,56 @@ button:hover {
             "INPUT INPUT INPUT";
         align-items: center;
     }
+
+    .bolinhaAzul{
+        top: -5px;   
+        right: 45%;
+    }
+
 }
+
+@media (max-width: 1080px){
+    .bolinhaAzul{
+        right: 44%;
+    }
+
+}
+
+@media (max-width: 760px){
+    .bolinhaAzul{
+        right: 42%;
+    }
+
+}
+
+@media (max-width: 590px){
+    .bolinhaAzul{
+        right: 40%;
+    }
+
+}
+
+@media (max-width: 590px){
+    .bolinhaAzul{
+        right: 39%;}}
+
+@media (max-width: 460px){
+    .bolinhaAzul{
+        right: 37%;}}
+
+@media (max-width: 380px){
+    .bolinhaAzul{
+        right: 34%;}}
+
+@media (max-width: 366px){
+    .bolinhaAzul{
+        right: 32%;}}
+
+@media (max-width: 315px){
+    .bolinhaAzul{
+        right: 30%;}}
+
+        
 
 /*RESPONSIVIDADE DO TOPO DO SITE*/
 
