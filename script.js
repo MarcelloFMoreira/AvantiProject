@@ -113,3 +113,16 @@ function clickMenu2(element) {
         lastClickedDepartamento = departamentoID;
     }
 }
+
+function alternarH5(elementoClicado) {
+    const blocoPai = elementoClicado.closest('.CentralAjuda, .Institu, .Atendimento');
+    const h5s = blocoPai.querySelectorAll('h5');
+  
+    h5s.forEach(h5 => {
+      h5.style.display = (h5.style.display === 'none' || h5.style.display === '') ? 'block' : 'none';
+    });
+  
+    // Gira a setinha do bloco clicado
+    const setinha = blocoPai.querySelector('.setinhaBaixa img');
+    setinha.classList.toggle('setinhaGirada');
+  }

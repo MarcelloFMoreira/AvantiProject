@@ -771,8 +771,15 @@ button:hover {
     line-height: 1.6
 }
 
+
+
+.setinhaBaixa{
+    display: none;
+}
+
 .flex {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -1219,8 +1226,19 @@ button:hover {
     .Institu h5,
     .CentralAjuda h5,
     .Atendimento h5 {
+        margin: 4px 20px;
         display: none;
     }
+
+    .setinhaBaixa img {
+        transition: transform 0.3s ease;
+      }
+      
+      .setinhaGirada {
+        transform: rotate(180deg);
+      }
+
+    
 
     .bandeirasParceiras {
         display: flex;
@@ -1229,15 +1247,23 @@ button:hover {
         padding-bottom: 42px;
     }
 
-    .Institu h4,
-    .CentralAjuda h4,
-    .Atendimento h4 {
+    .setinhaBaixa{display: flex;}
+
+    .ContainerTitulo {
         display: flex;
         align-items: center;
         margin: 0;
         height: 55px;
         width: 100%;
         border: solid 1px #DDDDDD;
+        justify-content: space-between;
+    }
+
+    .ContainerTitulo h4{
+        margin: 0 20px;
+    }
+    .setinhaBaixa{
+        margin: 0 20px;
     }
 
     .containerFooterTop {
