@@ -454,7 +454,15 @@ header {
     cursor: pointer;
     z-index: 2;
     padding: 10;
+
 }
+
+.btn-prev:hover,
+.btn-next:hover{
+    background-color: transparent;
+    color:#005CFF
+}
+
 
 .btn-prev {
     left: 0px;
@@ -945,6 +953,49 @@ button:hover {
         right: 30%;}}
 
         
+/*RESPONSIVIDADE DO HEADER INVISIVEL*/
+@media (max-width: 1300px) {
+    .ContainerCategoria{
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 970px) {
+    .listDepartamentos{
+        min-width: 172px;
+    }
+    .imgMenu{
+        display:none
+    }
+}
+
+@media (max-width: 650px){
+    .ContainerCategoria{
+        margin-right: 4px;
+        margin-left: 4px;
+        max-width: 400px; 
+        gap: 40px;
+    }
+}
+
+@media (max-width: 430px){
+    .ContainerCategoria{
+        margin-right: 4px;
+        margin-left: 15px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 360px){
+    .ContainerCategoria{
+        margin-right: 4px;
+        margin-left: 4px;
+        max-width: 400px; 
+        gap: 40px;
+    }
+}
+
+
 
 /*RESPONSIVIDADE DO TOPO DO SITE*/
 
