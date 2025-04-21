@@ -12,20 +12,25 @@ body {
 /* ESTILIZAÇÃO DO HEADER */
 
 
+.userIcon img{
+    height: 22px;
+    width: auto;
+}
+
 .ImgCarrinhoContainer {
     position: relative;
 
-  }
+}
 
-  .bolinhaAzul {
+.bolinhaAzul {
     position: absolute;
-    top: -5px;   
-    right: -5px; 
+    top: -5px;
+    right: -5px;
     width: 17px;
     height: 17px;
     background-color: #005CFF;
     border-radius: 50%;
-    z-index: 2;  
+    z-index: 2;
     color: white;
     font-family: "Nunito", sans-serif;
     font-size: 10px;
@@ -33,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 .hamburguerContainer {
     display: none;
@@ -188,10 +193,8 @@ header {
     gap: 125px;
     margin-left: 34px;
     margin-right: 285px;
-
-
-
 }
+
 
 .ContainerCategoria .listCategoria {
     display: flex;
@@ -345,6 +348,44 @@ header {
     gap: 30px;
 }
 
+.TituloCarrossel{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 19%;
+}
+
+.TituloCarrossel a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.OFF10{
+    height: 20px;
+    background-color: #5EC0BE;
+    color: white;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    position: relative;
+    top: 20px;
+}
+
+.informacoesDesconto {
+    display: grid;
+    grid-template-columns: 130px 65px; 
+    grid-template-rows: 1fr 1fr;    
+}
+
 .containerProduto {
     display: flex;
     flex-direction: column;
@@ -374,18 +415,22 @@ header {
 }
 
 .containerProduto .SemDesconto {
-    margin-bottom: 5px;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 50;
     font-size: small;
     text-decoration: line-through;
-
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 0px;
 }
 
 .containerProduto .ComDesconto {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     font-weight: 800;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 0px;
 }
 
 .containerProduto .Parcelado {
@@ -422,7 +467,30 @@ header {
     margin-left: 16%;
 }
 
-/*ESTILIZAÇÃO CARROSEL*/
+
+.ProdutoNovo{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.ProdutoNovo p{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: #00264E;
+    border-radius: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10px;
+    padding: 5px;
+    top: 10px;
+    margin-left: 0;
+    font-weight: 600;
+}
+
+.ProdutoNovo img {
+    display: block;
+}
 
 .carrossel-container {
     position: relative;
@@ -458,9 +526,9 @@ header {
 }
 
 .btn-prev:hover,
-.btn-next:hover{
+.btn-next:hover {
     background-color: transparent;
-    color:#005CFF
+    color: #005CFF
 }
 
 
@@ -781,7 +849,7 @@ button:hover {
 
 
 
-.setinhaBaixa{
+.setinhaBaixa {
     display: none;
 }
 
@@ -904,93 +972,104 @@ button:hover {
         align-items: center;
     }
 
-    .bolinhaAzul{
-        top: -5px;   
+    .bolinhaAzul {
+        top: -5px;
         right: 45%;
     }
 
 }
 
-@media (max-width: 1080px){
-    .bolinhaAzul{
+@media (max-width: 1080px) {
+    .bolinhaAzul {
         right: 44%;
     }
 
 }
 
-@media (max-width: 760px){
-    .bolinhaAzul{
+@media (max-width: 760px) {
+    .bolinhaAzul {
         right: 42%;
     }
 
 }
 
-@media (max-width: 590px){
-    .bolinhaAzul{
+@media (max-width: 590px) {
+    .bolinhaAzul {
         right: 40%;
     }
 
 }
 
-@media (max-width: 590px){
-    .bolinhaAzul{
-        right: 39%;}}
+@media (max-width: 590px) {
+    .bolinhaAzul {
+        right: 39%;
+    }
+}
 
-@media (max-width: 460px){
-    .bolinhaAzul{
-        right: 37%;}}
+@media (max-width: 460px) {
+    .bolinhaAzul {
+        right: 37%;
+    }
+}
 
-@media (max-width: 380px){
-    .bolinhaAzul{
-        right: 34%;}}
+@media (max-width: 380px) {
+    .bolinhaAzul {
+        right: 34%;
+    }
+}
 
-@media (max-width: 366px){
-    .bolinhaAzul{
-        right: 32%;}}
+@media (max-width: 366px) {
+    .bolinhaAzul {
+        right: 32%;
+    }
+}
 
-@media (max-width: 315px){
-    .bolinhaAzul{
-        right: 30%;}}
+@media (max-width: 315px) {
+    .bolinhaAzul {
+        right: 30%;
+    }
+}
 
-        
+
 /*RESPONSIVIDADE DO HEADER INVISIVEL*/
 @media (max-width: 1300px) {
-    .ContainerCategoria{
+    .ContainerCategoria {
         margin-right: 10%;
     }
 }
 
 @media (max-width: 970px) {
-    .listDepartamentos{
+    .listDepartamentos {
         min-width: 172px;
     }
-    .imgMenu{
-        display:none
+    .imgMenu {
+        display: none
     }
+
 }
 
-@media (max-width: 650px){
-    .ContainerCategoria{
+@media (max-width: 650px) {
+    .ContainerCategoria {
         margin-right: 4px;
         margin-left: 4px;
-        max-width: 400px; 
+        max-width: 400px;
         gap: 40px;
     }
 }
 
-@media (max-width: 430px){
-    .ContainerCategoria{
+@media (max-width: 430px) {
+    .ContainerCategoria {
         margin-right: 4px;
         margin-left: 15px;
         gap: 60px;
     }
 }
 
-@media (max-width: 360px){
-    .ContainerCategoria{
+@media (max-width: 360px) {
+    .ContainerCategoria {
         margin-right: 4px;
         margin-left: 4px;
-        max-width: 400px; 
+        max-width: 400px;
         gap: 40px;
     }
 }
@@ -1283,13 +1362,13 @@ button:hover {
 
     .setinhaBaixa img {
         transition: transform 0.3s ease;
-      }
-      
-      .setinhaGirada {
-        transform: rotate(180deg);
-      }
+    }
 
-    
+    .setinhaGirada {
+        transform: rotate(180deg);
+    }
+
+
 
     .bandeirasParceiras {
         display: flex;
@@ -1298,7 +1377,9 @@ button:hover {
         padding-bottom: 42px;
     }
 
-    .setinhaBaixa{display: flex;}
+    .setinhaBaixa {
+        display: flex;
+    }
 
     .ContainerTitulo {
         display: flex;
@@ -1310,10 +1391,11 @@ button:hover {
         justify-content: space-between;
     }
 
-    .ContainerTitulo h4{
+    .ContainerTitulo h4 {
         margin: 0 20px;
     }
-    .setinhaBaixa{
+
+    .setinhaBaixa {
         margin: 0 20px;
     }
 
