@@ -409,11 +409,12 @@ header {
     grid-row: 1 / 3;
     position: relative;
     top: 20px;
+    margin-right: 45px;
 }
 
 .informacoesDesconto {
     display: grid;
-    grid-template-columns: 130px 65px;
+    grid-template-columns: 100px 110px;
     grid-template-rows: 1fr 1fr;
 }
 
