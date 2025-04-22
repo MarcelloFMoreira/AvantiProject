@@ -11,8 +11,49 @@ body {
 
 /* ESTILIZAÇÃO DO HEADER */
 
+.inputContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 180px 0 70px;;
+}
 
-.userIcon img{
+.inputInicial {
+    width: 594px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding-right: 40px; 
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.botaoBusca {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.botaoBusca img {
+    width: 20px;
+    height: 20px;
+}
+
+#resultadoBusca{
+    margin: 10px 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.userIcon img {
     height: 22px;
     width: auto;
 }
@@ -83,17 +124,7 @@ header {
 }
 
 
-.inputInicial {
-    width: 594px;
-    height: 40px;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    background-image: url('img/iconLupa.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 4px) center;
-    background-size: 16px 16px;
-    margin: 0 280px 0 70px;
-}
+
 
 .topoHeader .HelloLink {
     margin: 0 30px 0 7px;
@@ -348,7 +379,7 @@ header {
     gap: 30px;
 }
 
-.TituloCarrossel{
+.TituloCarrossel {
     display: flex;
     justify-content: space-between;
     margin-right: 19%;
@@ -362,7 +393,7 @@ header {
     font-weight: 800;
 }
 
-.OFF10{
+.OFF10 {
     height: 20px;
     background-color: #5EC0BE;
     color: white;
@@ -382,8 +413,8 @@ header {
 
 .informacoesDesconto {
     display: grid;
-    grid-template-columns: 130px 65px; 
-    grid-template-rows: 1fr 1fr;    
+    grid-template-columns: 130px 65px;
+    grid-template-rows: 1fr 1fr;
 }
 
 .containerProduto {
@@ -468,13 +499,13 @@ header {
 }
 
 
-.ProdutoNovo{
+.ProdutoNovo {
     position: relative;
     display: inline-block;
     text-align: center;
 }
 
-.ProdutoNovo p{
+.ProdutoNovo p {
     position: absolute;
     z-index: 1;
     color: white;
@@ -942,7 +973,8 @@ button:hover {
         grid-area: INPUT !important;
         display: flex;
         justify-content: center;
-        margin: 0 10%;
+        margin: 0 auto;
+
     }
 
     .ImgCarrinhoContainer {
@@ -978,6 +1010,18 @@ button:hover {
     }
 
 }
+
+@media (max-width: 670px){
+    .inputInicial{
+        width: 80%;
+    }
+    .botaoBusca {
+        right: 55px;
+    }
+    
+}
+
+
 
 @media (max-width: 1080px) {
     .bolinhaAzul {
@@ -1042,6 +1086,7 @@ button:hover {
     .listDepartamentos {
         min-width: 172px;
     }
+
     .imgMenu {
         display: none
     }

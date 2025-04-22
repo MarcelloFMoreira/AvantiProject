@@ -33,8 +33,14 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                     </svg></div>
                 <div class="Logoimg"><a href="#"><img src="img\LogoAvanti.png" alt="LogoAvanti"></a></div><!--Logoimg-->
-                <div class="inputContainer"><input class="inputInicial" type="text"
-                        placeholder="   Digite aqui o que você procura"></div><!--inputContainer-->
+
+                <div class="inputContainer">
+                    <input type="text" placeholder="Digite aqui o que você procura" id="campoBusca"
+                        class="inputInicial" />
+                    <button id="btnBuscar" class="botaoBusca">
+                        <img src="img/iconLupa.png" alt="Buscar" />
+                    </button>
+                </div>
                 <a href="#" class="userIcon"><img src="img\IconUser.png" alt="User"></a>
                 <a href="#" class="HelloLink">
                     <p>Olá, <br>Nome cliente!</p>
@@ -43,6 +49,7 @@
                         <div class="bolinhaAzul">2</div>
                     </a></div><!--ImgCarrinhoContainer-->
             </div>
+            <p id="resultadoBusca"></p>
             <div class="sectionLinks">
                 <ul>
                     <li id="iBurguer" onclick="clickMenu1()">
@@ -292,72 +299,92 @@
 
 
         <section class="carrossel">
-            <div class="TituloCarrossel"><p class="Lancamentos">Lançamentos</p> <a href="#">Ver mais</a></div>
+            <div class="TituloCarrossel">
+                <p class="Lancamentos">Lançamentos</p> <a href="#">Ver mais</a>
+            </div>
             <div class="carrossel-container">
                 <button class="btn-prev"><img src="img\btn-prev.svg"></button>
                 <div class="todosProdutos">
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>
                     </div>
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>
                     </div>
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>
                     </div>
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>
                     </div>
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>
                     </div>
                     <div class="containerProduto">
-                        <div class="ProdutoNovo"><p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto"></div>
+                        <div class="ProdutoNovo">
+                            <p>NOVO</p><img src="img\CamisaBranca.png" alt="exemplo produto">
+                        </div>
                         <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
                         <div class="informacoesDesconto">
                             <p class="SemDesconto">R$ 100,00</p>
                             <p class="ComDesconto">R$ 79,90</p>
-                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank" rel="noopener noreferrer" class="OFF10">10% OFF</a>
+                            <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51" target="_blank"
+                                rel="noopener noreferrer" class="OFF10">10% OFF</a>
                         </div><!--informaçõesDesconto-->
                         <p class="Parcelado">Ou em até <span>10x de R$ 7,90</span></p>
                         <button><a href="#">Comprar</a></button>

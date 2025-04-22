@@ -117,12 +117,24 @@ function clickMenu2(element) {
 function alternarH5(elementoClicado) {
     const blocoPai = elementoClicado.closest('.CentralAjuda, .Institu, .Atendimento');
     const h5s = blocoPai.querySelectorAll('h5');
-  
+
     h5s.forEach(h5 => {
-      h5.style.display = (h5.style.display === 'none' || h5.style.display === '') ? 'block' : 'none';
+        h5.style.display = (h5.style.display === 'none' || h5.style.display === '') ? 'block' : 'none';
     });
-  
+
     // Gira a setinha do bloco clicado
     const setinha = blocoPai.querySelector('.setinhaBaixa img');
     setinha.classList.toggle('setinhaGirada');
-  }
+}
+
+
+document.getElementById("btnBuscar").addEventListener("click", function () {
+    const textoBuscado = document.getElementById("campoBusca").value.trim();
+    const resultado = document.getElementById("resultadoBusca");
+
+    if (textoBuscado !== "") {
+        resultado.innerText = `Você buscou por: '${textoBuscado}'`;
+    } else {
+        resultado.innerText = "";
+    }
+});
